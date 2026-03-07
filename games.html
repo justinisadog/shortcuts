@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Games - Shortcuts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="spinner"></div>
+      <div class="loading-text">Redirecting...</div>
+    </div>
+
+    <header>
+      <h1>Games</h1>
+      <div class="clock">
+        <h2><b>Current Time:</b> <span id="clock"></span></h2>
+      </div>
+    </header>
+
+    <section class="actions">
+      <div class="grid">
+        <a href="https://www.roblox.com" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="images/robloxlogo.png" alt="Game One" class="card-icon-vertical">
+          <span class="card-label">Roblox</span>
+        </a>
+
+        <a href="https://swordmasters.io" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="https://play-lh.googleusercontent.com/XI6JqC3a3iS_JC97-Uea-wsFqpDwAKfKLxBUKXfFJU9osU6gKgxKUSxo2DlWpPSm1zym" alt="Game Two" class="card-icon-vertical">
+          <span class="card-label">Sword Masters</span>
+        </a>
+
+        <a href="https://crazygames.com" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="https://play-lh.googleusercontent.com/91TVBW8CFsOsbh7r3Y-kACNVYely0I7C-UcYP3-Jw-_MHCtfa_18i_4L7ozvGMoI9bk=s188-rw" alt="Game Three" class="card-icon-vertical">
+          <span class="card-label">Crazygames</span>
+        </a>
+
+        <a href="home.html" class="card large card-vertical special">
+          <img src="images/back.webp" alt="Back to Home" class="card-icon-vertical">
+          <span class="card-label">Back</span>
+        </a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

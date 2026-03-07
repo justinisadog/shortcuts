@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entertainment - Shortcuts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="spinner"></div>
+      <div class="loading-text">Redirecting...</div>
+    </div>
+
+    <header>
+      <h1>Entertainment</h1>
+      <div class="clock">
+        <h2><b>Current Time:</b> <span id="clock"></span></h2>
+      </div>
+    </header>
+
+    <section class="actions">
+      <div class="grid">
+        <a href="https://www.youtube.com" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="images/YoutubeLogo.png" alt="YouTube" class="card-icon-vertical" style="width: 40%; height: auto;">
+        </a>
+
+        <a href="https://www.netflix.com" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Netflix_Logomark.png" alt="Netflix" class="card-icon-vertical" style="width: 40%; height: auto;">
+        </a>
+
+        <a href="https://www.disneyplus.com" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney+" class="card-icon-vertical" style="width: 40%; height: auto;">
+        </a>
+
+        <a href="home.html" class="card large card-vertical special">
+          <img src="images/back.webp" alt="Back to Home" class="card-icon-vertical">
+          <span class="card-label">Back</span>
+        </a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

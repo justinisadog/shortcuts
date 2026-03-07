@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learn - Shortcuts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="spinner"></div>
+      <div class="loading-text">Redirecting...</div>
+    </div>
+
+    <header>
+      <h1>Learn</h1>
+      <div class="clock">
+        <h2><b>Current Time:</b> <span id="clock"></span></h2>
+      </div>
+    </header>
+
+    <section class="actions">
+      <div class="grid">
+        <a href="https://www.khanacademy.org" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="images/khan-academylogo.png" alt="Khan Academy" class="card-icon-vertical">
+          <span class="card-label">Khan Academy</span>
+        </a>
+
+        <a href="facts.html" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="https://cdn-icons-png.flaticon.com/512/5360/5360770.png" alt="Fun Facts" class="card-icon-vertical">
+          <span class="card-label">Fun Facts</span>
+        </a>
+
+        <a href="https://www.duolingo.com" class="card large card-vertical" onclick="showLoading(event)">
+          <img src="images/duolingo.png" alt="Duolingo" class="card-icon-vertical">
+          <span class="card-label">Duolingo</span>
+        </a>
+
+        <a href="home.html" class="card large card-vertical special">
+          <img src="images/back.webp" alt="Back to Home" class="card-icon-vertical">
+          <span class="card-label">Back</span>
+        </a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
