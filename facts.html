@@ -22,10 +22,39 @@
       </div>
     </header>
 
-    <section class="actions">
+   <!--  <section class="actions">
       <div class="facts-container facts" id="facts">
-        <!-- Facts will be loaded here -->
-      </div>
+      </div> -->
+    <div id="fact-container">
+    <h2>Did you know?</h2>
+    <!-- The fact will be displayed here -->
+    <p id="fact-text">Loading a useless fact...</p>
+    <button onclick="fetchFact()">Get Another Fact</button>
+</div>
+
+<script>
+    async function fetchFact() {
+        const factElement = document.getElementById('fact-text');
+        factElement.innerText = "Loading...";
+        
+        try {
+            // 1. Fetch data from the API endpoint
+            const response = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/random');
+            
+            // 2. Parse the response into a JSON object
+            const data = await response.json();
+            
+            // 3. Access the 'text' property and display it in the <p> tag
+            factElement.innerText = data.text;
+        } catch (error) {
+            factElement.innerText = "Failed to load fact. Check your connection!";
+            console.error("Error fetching fact:", error);
+        }
+    }
+
+    // Call the function once when the page first loads
+    fetchFact();
+</script>
       
       <div class="grid">
         <a href="learn.html" class="card large card-vertical special small">
@@ -35,7 +64,7 @@
       </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> -->
     
   </body>
 </html>
